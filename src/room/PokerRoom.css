@@ -1,0 +1,56 @@
+.room{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round{
+    background-color: red;
+    border: 10px solid blue;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;   
+}
+
+.player{
+    background-color: aqua;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 400px;
+    left: 195px;
+}
+
+.str-btn{
+    position: absolute;
+    top:40px;
+    left: 40px;
+}
+.str-btn2 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+.bid{
+    position: absolute;
+    bottom:10px;
+    right: 20px;
+    border: 2px solid black;
+}
+.pot{
+    position: absolute;
+    top:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.floor-cards{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    border: 2px solid black;
+    height: 250px;
+    width: 600px;
+}

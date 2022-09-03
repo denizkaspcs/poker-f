@@ -1,0 +1,82 @@
+$num_elements :8;
+$rot : 0;
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: "https://wallpaperaccess.com/full/1483382.jpg";
+}
+
+
+.round {
+    position: absolute;
+    top:-570px;
+    left:100px;
+    background-color: green;
+    border: 10px solid red;
+    margin-top: 650px;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    z-index: -1 ;
+}
+
+.player {
+    background-color: aqua;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 0%;
+    left: 185px;
+}
+
+.str-btn {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.str-btn2 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.bid {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: 2px solid black;
+}
+
+.pot {
+    position: absolute;
+    top: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.floor-cards {
+    position: absolute;
+    top:200px;
+    right: -530px;
+    height: 250px;
+    width: 600px;
+}
+
+.pbox-hot{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top:200px;
+    margin-left: 35px;
+}
+
+
+@for $i from 1 through $num_elements{
+    .pbox-hot:nth-child(#{$i}){
+        transform: rotate($rot * 1deg) translate(275px) rotate($rot * -1deg);
+    }
+    $rot : $rot + (360/8);
+}

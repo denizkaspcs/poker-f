@@ -1,0 +1,101 @@
+.room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round {
+  position: absolute;
+  top: -570px;
+  left: 100px;
+  background-color: green;
+  border: 10px solid red;
+  margin-top: 650px;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.player {
+  background-color: aqua;
+  height: 10px;
+  width: 10px;
+  position: relative;
+  top: 0%;
+  left: 185px;
+}
+
+.str-btn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.str-btn2 {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+
+.bid {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  border: 2px solid black;
+}
+
+.pot {
+  position: absolute;
+  top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.floor-cards {
+  position: absolute;
+  top: 200px;
+  right: -530px;
+  height: 250px;
+  width: 600px;
+}
+
+.pbox-hot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 200px;
+  margin-left: 35px;
+}
+
+.pbox-hot:nth-child(1) {
+  transform: rotate(0deg) translate(275px) rotate(0deg);
+}
+
+.pbox-hot:nth-child(2) {
+  transform: rotate(45deg) translate(275px) rotate(-45deg);
+}
+
+.pbox-hot:nth-child(3) {
+  transform: rotate(90deg) translate(275px) rotate(-90deg);
+}
+
+.pbox-hot:nth-child(4) {
+  transform: rotate(135deg) translate(275px) rotate(-135deg);
+}
+
+.pbox-hot:nth-child(5) {
+  transform: rotate(180deg) translate(275px) rotate(-180deg);
+}
+
+.pbox-hot:nth-child(6) {
+  transform: rotate(225deg) translate(275px) rotate(-225deg);
+}
+
+.pbox-hot:nth-child(7) {
+  transform: rotate(270deg) translate(275px) rotate(-270deg);
+}
+
+.pbox-hot:nth-child(8) {
+  transform: rotate(315deg) translate(275px) rotate(-315deg);
+}/*# sourceMappingURL=Round.css.map */

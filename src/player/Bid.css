@@ -1,0 +1,32 @@
+.bid-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bid-comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width: 500px;
+    border: 2px solid gold;
+}
+.bid-cur-bid{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    margin-top: 25px;
+}
+.bid-money{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.bid-btn{
+    margin-top: 20px;
+    border-radius: 10%;
+    border:2px solid black;
+}
