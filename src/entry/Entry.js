@@ -20,7 +20,7 @@ function Entry() {
         setPlayerName(event.target.value);
     }
     const get_deck = async () => {
-        axios.get(`http://localhost:8080/get_deck?room_id=${roomId}`).then((response) => {
+        axios.get(`https://abiler-poker-back.herokuapp.com/get_deck?room_id=${roomId}`).then((response) => {
             console.log(response)
         }).catch((err) => {
             console.log(err);
@@ -28,7 +28,7 @@ function Entry() {
     }
     const on_submit = async () => {
         if (create) {
-            await axios.post('http://localhost:8080/createRoom', {
+            await axios.post('https://abiler-poker-back.herokuapp.com/createRoom', {
                 id: roomId,
                 name: playerName,
                 money: money,
@@ -44,7 +44,7 @@ function Entry() {
             await get_deck();
 
         } else {
-            await axios.post('http://localhost:8080/enterRoom', {
+            await axios.post('https://abiler-poker-back.herokuapp.com/enterRoom', {
                 id: roomId,
                 name: playerName
             }).then((results) => {
