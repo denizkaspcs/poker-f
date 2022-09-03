@@ -34,7 +34,7 @@ function PokerRoom() {
     const [floorCards, setFloorCards] = useState([]);
     const [turnOver, setTurnOver] = useState(false);
     useEffect(() => {
-        const newSocket = io(`http://localhost:8080`);
+        const newSocket = io(`http://abiler-poker-back.herokuapp.com`);
         setSocket(newSocket);
         return () => newSocket.close();
     },[setSocket])
@@ -118,7 +118,7 @@ function PokerRoom() {
     }, []);
 //                location.state.name
     const get_participant = async () => {
-        await axios.get(`http://localhost:8080/get_participant?room=${location.state.roomId}&name=${location.state.name}`).then((response) => {
+        await axios.get(`http://abiler-poker-back.herokuapp.com/get_participant?room=${location.state.roomId}&name=${location.state.name}`).then((response) => {
                 console.log(response)
             if (response && response.data && response.data.statusCode === 200) {
                 console.log(response)
@@ -142,7 +142,7 @@ function PokerRoom() {
     }
 
     const start = async () => {
-        axios.get(`http://localhost:8080/start?room_id=${location.state.roomId}`).then((response) => {
+        axios.get(`http://abiler-poker-back.herokuapp.com/start?room_id=${location.state.roomId}`).then((response) => {
             console.log("hello: ")
             console.log(response);
             socket.emit('start', location.state.roomId);
